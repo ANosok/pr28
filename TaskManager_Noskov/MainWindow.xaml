@@ -10,7 +10,7 @@
         <Style TargetType="{x:Type Button}">
             <Setter Property="Background">
                 <Setter.Value>
-                    <ImageBrush />
+                    <ImageBrush ImageSource="/Images/remove.png"/>
                 </Setter.Value>
             </Setter>
             <Setter Property="Template">
@@ -27,7 +27,7 @@
             <Grid.Effect>
                 <DropShadowEffect Opacity="0.1"/>
             </Grid.Effect>
-            <Image Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10"  />
+            <Image Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10"  Source="/Images/completed-task.png"/>
             <Label Content="Задачник" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" />
             <Button Command="{Binding OnClose}" Width="20" Height="20" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10">
                 <Button.Effect>

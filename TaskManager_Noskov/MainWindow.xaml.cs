@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TaskManager_Noskov.ViewModels;
 
 namespace TaskManager_Noskov
 {
@@ -16,9 +17,12 @@ namespace TaskManager_Noskov
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static MainWindow init;
         public MainWindow()
         {
             InitializeComponent();
+            init = this;
+            DataContext = new VM_Pages();
         }
     }
 }
