@@ -8,6 +8,6 @@ namespace TaskManager_Noskov.ViewModels
 {
     public class VM_Pages
     {
-
+        public VM_Tasks vm_tasks;
     }
 }
